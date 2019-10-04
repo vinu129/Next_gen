@@ -1,0 +1,17 @@
+// All the SCSS Variables goes here
+
+// Font
+$font-family: 'Noto Sans JP', sans-serif;
+$font-size: 1rem;
+$font-line-height: 1.2;
+
+// Header
+$header-height: 70px;
+
+$breakpoints: (
+  "xl": 1200px,
+  "lg": 1024px,
+  "md": 768px,
+  "sm": 576px,
+  "xs": 320px
+);

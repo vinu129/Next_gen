@@ -1,0 +1,81 @@
+#site-nav {
+  @include wh(60px);
+  background-color: $primary;
+  @include flex(column, center);
+  position: relative;
+  flex-shrink: 0;
+  padding: 0 5px;
+  transition: 0.3s all ease-in-out;
+  .nav-link {
+    padding: 12px 0 12px 18px;
+    color: $accent;
+    font-weight: 300;
+    width: 100%;
+    margin: 5px 0;
+    @include flex(row, center, center);
+
+    &:hover {
+      background-color: rgba(225, 225, 225, 0.1);
+      border-radius: 5px;
+    }
+    .nav-icon {
+      width: 100%;
+    }
+    .nav-title {
+      display: none;
+      font-size: 15px;
+    }
+  }
+  .seperator {
+    border-bottom: 1px solid $accent;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .add-menu {
+    @include wh(240px);
+    overflow: auto;
+    position: absolute;
+    left: 60px;
+    display: none;
+    z-index: 2;
+    background-color: $white;
+    box-shadow: 3px 1px 6px 0px #ccc;
+    padding: 10px 15px;
+    .close-menu {
+      position: absolute;
+      right: 0;
+    }
+    #search-box {
+      @include wh(100%, auto);
+      position: relative;
+      padding: 10px;
+      margin-top: 30px;
+      &:focus {
+        .search-icon {
+          display: none;
+        }
+      }
+    }
+    .search-icon {
+      position: absolute;
+      right: 22px;
+      top: 80px;
+      color: $gray;
+    }
+    .menu-title {
+      font-size: 0.8rem;
+      margin-top: 15px;
+    }
+    .menu-list-item {
+      @include flex(row, center);
+      font-size: 0.9rem;
+      color: $primary;
+      margin-top: 8px;
+      .menu-list-icon {
+        @include wh(40px, 40px);
+        background-color: $accent;
+        margin-right: 10px;
+      }
+    }
+  }
+}

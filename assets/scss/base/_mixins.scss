@@ -1,0 +1,23 @@
+// All the SCSS mixins goes here
+
+// display flex properties
+@mixin flex($flex-direction: row, $align-items: flex-start, $justify-content: flex-start) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+// Height width
+@mixin wh($w:100%,$h:100%) {
+  width: $w;
+  height: $h;
+}
+
+// media queries for responsive designs
+@mixin media-query($screen-size) {
+  $screen: map-get($breakpoints, quote($screen-size));
+  @media (max-width: $screen) {
+    @content;
+  }
+}

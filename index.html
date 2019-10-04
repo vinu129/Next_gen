@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>next_gen</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+    <!-- Main-wrapper -->
+    <div id="main-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <button class="nav-toggle fa fa-bars"></button>
+            <div class="profile">
+                <img src="./assets/images/profile-image.jfif" alt="profile-img" class="profile-img">
+            </div>
+        </header>
+        <!-- Ends: Header -->
+        <!-- Content-header -->
+        <div id="content-header">
+            <div class="header-content">
+                <label for="title_name" class="edit"><em>Edit</em></label>
+                <input type="text" placeholder="Title Here" id="title_name">
+                <div class="btn-group">
+                    <button class="btn">Delete</button>
+                    <button class="btn btn-accent" onclick="change_val()">Save</button>
+                </div>
+                <select name="action-dropdown" id="action-dropdown">
+                    <option value="placeholder">More actions</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                </select>
+            </div>
+            <button class="setting-icon" onclick="open_menu('setting-menu')">
+                <span class=" fa fa-cog"></span>
+            </button>
+        </div>
+        <!-- Ends: content-header -->
+        <!-- Content-wrapper -->
+        <div id="content-wrapper">
+
+            <!-- Sidebar -->
+            <aside id="site-nav">
+                <a href="#" class="nav-link active" onclick="open_menu('add-menu')">
+                    <span class="nav-icon fa fa-plus"></span>
+                    <span class="nav-title">Add</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-undo"></span>
+                    <span class="nav-title">Undo</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-repeat"></span>
+                    <span class="nav-title">Redo</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-th-large"></span>
+                    <span class="nav-title">Grid</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-desktop"></span>
+                    <span class="nav-title">View</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-pencil"></span>
+                    <span class="nav-title">Edit</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-language"></span>
+                    <span class="nav-title">Language</span>
+                </a>
+
+                <!-- Add menu  -->
+                <div class="add-menu">
+                    <button class="fa fa-times close-menu"></button>
+                    <div class="menu-title">Add element</div>
+                    <input type="search" name="search" id="search-box" placeholder="Search elements">
+                    <span class="search-icon fa fa-search"></span>
+                    <div class="menu-title">Blocks</div>
+                    <div class="menu-list">
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                    </div>
+                    <div class="menu-title">Paragraphs</div>
+                    <div class="menu-list">
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-title">Text Block</div>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <!-- Ends: Sidebar -->
+            <!-- Content -->
+            <main id="content">
+                <div class="content-body">
+                    <h1 id="content-title">Title Here</h1>
+                    <p class="content-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid animi corrupti ab consequatur
+                        officiis, qui doloremque velit porro quasi expedita. Soluta in adipisci nesciunt sint eveniet
+                        dolore quaerat repellat hic? Voluptas labore sit, veritatis, ad consectetur consequuntur atque
+                        velit praesentium, culpa rerum fuga molestiae inventore facere corporis temporibus minima in.
+                        Aliquid quos veritatis, unde rem, vitae assumenda labore ut laudantium repellat illo, recusandae
+                        deserunt voluptatem repellendus tenetur explicabo obcaecati quis quas mollitia nemo eaque?
+                        Nostrum dicta eveniet tempore perspiciatis illum mollitia sapiente perferendis aut hic quod,
+                        exercitationem dolorum vel quas? Fugit tempore eveniet voluptatum nobis nihil. Asperiores
+                        expedita id quam.</p>
+                        <div class="img-gallery">
+                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
+                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
+                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
+                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
+                        </div>
+                        <p class="content-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid animi corrupti ab consequatur
+                            officiis, qui doloremque velit porro quasi expedita. Soluta in adipisci nesciunt sint eveniet
+                            dolore quaerat repellat hic? Voluptas labore sit, veritatis, ad consectetur consequuntur atque
+                            velit praesentium, culpa rerum fuga molestiae inventore facere corporis temporibus minima in.
+                            Aliquid quos veritatis, unde rem, vitae assumenda labore ut laudantium repellat illo, recusandae
+                            deserunt voluptatem repellendus tenetur explicabo obcaecati quis quas mollitia nemo eaque?
+                            Nostrum dicta eveniet tempore perspiciatis illum mollitia sapiente perferendis aut hic quod,
+                            exercitationem dolorum vel quas? Fugit tempore eveniet voluptatum nobis nihil. Asperiores
+                            expedita id quam.</p>
+                </div>
+                <div class="setting-menu"></div>
+            </main>
+            <!-- Ends:Content -->
+        </div>
+        <!-- Ends: Content-wrapper -->
+    </div>
+    <!-- Ends: Main-wrapper -->
+
+    <!-- Link to jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Link to javascript -->
+    <script src="./assets/JS/main.js"></script>
+</body>
+
+</html>

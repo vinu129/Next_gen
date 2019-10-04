@@ -1,0 +1,15 @@
+#header {
+  @include wh(100%, $header-height);
+  background-color: $primary;
+  border-bottom: 4px solid $accent;
+  @include flex(row, center, space-between);
+  padding: 0 20px;
+  .nav-toggle {
+    font-size: 1.4rem;
+    color: $accent;
+  }
+  .profile-img {
+    border-radius: 50%;
+    @include wh(35px, 35px);
+  }
+}

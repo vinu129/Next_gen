@@ -1,0 +1,55 @@
+// Global styles goes here
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  @include wh;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $font-line-height;
+  font-weight: 400;
+}
+#main-wrapper {
+  @include wh;
+  @include flex(column);
+}
+#content-wrapper {
+  @include wh;
+  @include flex(row);
+}
+input[type="checkbox"] {
+  display: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+label,
+button {
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}

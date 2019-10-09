@@ -52,7 +52,6 @@
         <!-- Ends: content-header -->
         <!-- Content-wrapper -->
         <div id="content-wrapper">
-
             <!-- Sidebar -->
             <aside id="site-nav">
                 <a href="#" class="nav-link active" onclick="open_menu('add-menu')">
@@ -84,6 +83,10 @@
                     <span class="nav-icon fa fa-language"></span>
                     <span class="nav-title">Language</span>
                 </a>
+                <a href="#" class="nav-link" onclick="open_menu('theme-menu')">
+                    <span class="nav-icon fa fa-square"></span>
+                    <span class="nav-title">Theme</span>
+                </a>
 
                 <!-- Add menu  -->
                 <div class="add-menu">
@@ -94,59 +97,94 @@
                     <div class="menu-title">Blocks</div>
                     <div class="menu-list">
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Text Block</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Custom heading</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Button</div>
                         </a>
                     </div>
                     <div class="menu-title">Paragraphs</div>
                     <div class="menu-list">
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Line/seperator</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Image</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Gallery</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Carousel</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Table</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Related content</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Social media links</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Banner</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Text Block</div>
                         </a>
                         <a href="#" class="menu-list-item">
-                            <div class="menu-list-icon"></div>
+                            <div class="menu-list-icon bg-accent"></div>
                             <div class="menu-list-title">Text Block</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Theme menu -->
+                <div class="theme-menu">
+                    <button class="fa fa-times close-menu"></button>
+                    <div class="menu-title">Theming</div>
+                    <div class="menu-title">Header</div>
+                    <div class="menu-list">
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon bg-primary "></div>
+                            <div class="menu-list-title">Dark</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon bg-light"></div>
+                            <div class="menu-list-title">Light</div>
+                        </a>
+                    </div>
+                    <div class="menu-title">Accent</div>
+                    <div class="menu-list">
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon bg-accent "></div>
+                            <div class="menu-list-title">Blue</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon bg-green"></div>
+                            <div class="menu-list-title">Green</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon bg-pink "></div>
+                            <div class="menu-list-title">Magenta</div>
+                        </a>
+                        <a href="#" class="menu-list-item">
+                            <div class="menu-list-icon bg-yellow"></div>
+                            <div class="menu-list-title">Yellow</div>
                         </a>
                     </div>
                 </div>
@@ -167,10 +205,10 @@
                         exercitationem dolorum vel quas? Fugit tempore eveniet voluptatum nobis nihil. Asperiores
                         expedita id quam.</p>
                     <div class="img-gallery">
-                        <div class="content-block"><span class="fa fa-diamond"></span></div>
-                        <div class="content-block"><span class="fa fa-dashboard"></span></div>
-                        <div class="content-block"><span class="fa fa-university"></span></div>
-                        <div class="content-block"><span class="fa fa-heartbeat"></span></div>
+                        <div class="content-block bg-custom"><span class="fa fa-diamond"></span></div>
+                        <div class="content-block bg-custom"><span class="fa fa-dashboard"></span></div>
+                        <div class="content-block bg-custom"><span class="fa fa-university"></span></div>
+                        <div class="content-block bg-custom"><span class="fa fa-heartbeat"></span></div>
                         <!-- <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
                         <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
                         <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
@@ -187,6 +225,7 @@
                         exercitationem dolorum vel quas? Fugit tempore eveniet voluptatum nobis nihil. Asperiores
                         expedita id quam.</p>
                 </div>
+                <!-- Setting menu -->
                 <div class="setting-menu">
                     <div class="menu-title">Settings</div>
                     <div class="collapsible-menu">
@@ -208,7 +247,7 @@
                             <div class="publish-field"><span class="fa fa-check-square publish-icon"></span> Published
                             </div>
                             <div class="input-label">Last saved</div>
-                            <input type="text" class="data-value " placeholder="01.01.19" ></input>
+                            <input type="text" class="data-value " placeholder="01.01.19"></input>
                             <div class="input-label">Author</div>
                             <div class="input-value">admin</div>
                             <div class="checkbox-field">
@@ -252,8 +291,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+                <!-- Ends:Setting menu -->
             </main>
             <!-- Ends:Content -->
         </div>
@@ -263,6 +302,7 @@
 
     <!-- Link to jquery -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
     <!-- Link to javascript -->
     <script src="./assets/JS/main.js"></script>
 </body>

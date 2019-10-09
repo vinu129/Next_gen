@@ -2,15 +2,13 @@
   @include wh(60px);
   background-color: $primary;
   @include flex(column, center);
-  position: relative;
+
   flex-shrink: 0;
   padding: 0 5px;
   transition: 0.3s all ease-in-out;
-  // @include media-query(md) {
-  // position: absolute;
-  // left: 0;
-  // }
-  
+  z-index: 5;
+  overflow: auto;
+
   .nav-link {
     padding: 12px 0 12px 18px;
     color: $accent;
@@ -19,7 +17,9 @@
     margin: 5px 0;
     @include flex(row, center, center);
 
-    &:hover {
+    &:active,
+    &:hover,
+    &.active {
       background-color: rgba(225, 225, 225, 0.1);
       border-radius: 5px;
     }
@@ -36,7 +36,8 @@
     width: 100%;
     margin: 15px 0;
   }
-  .add-menu {
+  .add-menu,
+  .theme-menu {
     @include wh(240px);
     overflow: auto;
     position: absolute;
@@ -56,11 +57,6 @@
       position: relative;
       padding: 10px;
       margin-top: 30px;
-      &:focus {
-        .search-icon {
-          display: none;
-        }
-      }
     }
     .search-icon {
       position: absolute;
@@ -69,7 +65,7 @@
       color: $gray;
     }
     .menu-title {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-top: 15px;
     }
     .menu-list-item {
@@ -79,9 +75,12 @@
       margin-top: 8px;
       .menu-list-icon {
         @include wh(40px, 40px);
-        background-color: $accent;
+        // background-color: $accent;
         margin-right: 10px;
       }
     }
+  }
+  .theme-menu {
+    display: none;
   }
 }

@@ -28,17 +28,28 @@
       }
       @include media-query(sm) {
         height: auto;
-        margin-right: 0;
+        margin-right: 5px;
         margin-left: auto;
       }
       .btn {
         height: 100%;
         padding: 1px 35px;
         border: 1px solid transparent;
+        background-color:lighten($gray,10%);
+        &:hover{
+          background-color: $accent;
+          color: $white;
+        }
         @include media-query(sm) {
           padding: 5px 10px;
         }
+      
+     
       }
+        .btn-accent {
+          background-color: $accent;
+          color: $white;
+        }
     }
     #action-dropdown {
       padding: 2px 5px;
@@ -86,8 +97,4 @@
     padding: 0 15px;
     background-color: $white;
   }
-}
-.btn-accent {
-  background-color: $accent;
-  color: $white;
 }

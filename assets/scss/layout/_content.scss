@@ -29,7 +29,7 @@
         @include wh(170px, 170px);
         @include flex(row, center, center);
         font-size: 4.5rem;
-        background-color: $accent;
+       
         color: $white;
         margin: 20px;
       }
@@ -50,6 +50,7 @@
       right: 0;
       background-color: #fff;
       box-shadow: 4px 4px 12px 0px #ccc;
+      display: none;
     }
     @include media-query(xs) {
       width: 250px;

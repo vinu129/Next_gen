@@ -30,8 +30,11 @@
         <!-- Content-header -->
         <div id="content-header">
             <div class="header-content">
-                <label for="title_name" class="edit"><em>Edit</em></label>
-                <input type="text" placeholder="Title Here" id="title_name">
+                <div class="edit-title">
+                    <label for="title_name" class="edit"><em>Edit</em></label>
+                    <input type="text" placeholder="Title Here" id="title_name">
+                </div>
+
                 <div class="btn-group">
                     <button class="btn">Delete</button>
                     <button class="btn btn-accent" onclick="change_val()">Save</button>
@@ -96,46 +99,46 @@
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Custom heading</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Button</div>
                         </a>
                     </div>
                     <div class="menu-title">Paragraphs</div>
                     <div class="menu-list">
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Line/seperator</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Image</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Gallery</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Carousel</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Table</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Related content</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Social media links</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
-                            <div class="menu-list-title">Text Block</div>
+                            <div class="menu-list-title">Banner</div>
                         </a>
                         <a href="#" class="menu-list-item">
                             <div class="menu-list-icon"></div>
@@ -153,7 +156,8 @@
             <main id="content">
                 <div class="content-body">
                     <h1 id="content-title">Title Here</h1>
-                    <p class="content-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid animi corrupti ab consequatur
+                    <p class="content-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid animi
+                        corrupti ab consequatur
                         officiis, qui doloremque velit porro quasi expedita. Soluta in adipisci nesciunt sint eveniet
                         dolore quaerat repellat hic? Voluptas labore sit, veritatis, ad consectetur consequuntur atque
                         velit praesentium, culpa rerum fuga molestiae inventore facere corporis temporibus minima in.
@@ -162,23 +166,94 @@
                         Nostrum dicta eveniet tempore perspiciatis illum mollitia sapiente perferendis aut hic quod,
                         exercitationem dolorum vel quas? Fugit tempore eveniet voluptatum nobis nihil. Asperiores
                         expedita id quam.</p>
-                        <div class="img-gallery">
-                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
-                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
-                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
-                            <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
-                        </div>
-                        <p class="content-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid animi corrupti ab consequatur
-                            officiis, qui doloremque velit porro quasi expedita. Soluta in adipisci nesciunt sint eveniet
-                            dolore quaerat repellat hic? Voluptas labore sit, veritatis, ad consectetur consequuntur atque
-                            velit praesentium, culpa rerum fuga molestiae inventore facere corporis temporibus minima in.
-                            Aliquid quos veritatis, unde rem, vitae assumenda labore ut laudantium repellat illo, recusandae
-                            deserunt voluptatem repellendus tenetur explicabo obcaecati quis quas mollitia nemo eaque?
-                            Nostrum dicta eveniet tempore perspiciatis illum mollitia sapiente perferendis aut hic quod,
-                            exercitationem dolorum vel quas? Fugit tempore eveniet voluptatum nobis nihil. Asperiores
-                            expedita id quam.</p>
+                    <div class="img-gallery">
+                        <div class="content-block"><span class="fa fa-diamond"></span></div>
+                        <div class="content-block"><span class="fa fa-dashboard"></span></div>
+                        <div class="content-block"><span class="fa fa-university"></span></div>
+                        <div class="content-block"><span class="fa fa-heartbeat"></span></div>
+                        <!-- <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
+                        <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
+                        <img src="./assets/images/profile-image.jfif" class="content-img" alt="">
+                        <img src="./assets/images/profile-image.jfif" class="content-img" alt=""> -->
+                    </div>
+                    <p class="content-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid animi
+                        corrupti ab consequatur
+                        officiis, qui doloremque velit porro quasi expedita. Soluta in adipisci nesciunt sint eveniet
+                        dolore quaerat repellat hic? Voluptas labore sit, veritatis, ad consectetur consequuntur atque
+                        velit praesentium, culpa rerum fuga molestiae inventore facere corporis temporibus minima in.
+                        Aliquid quos veritatis, unde rem, vitae assumenda labore ut laudantium repellat illo, recusandae
+                        deserunt voluptatem repellendus tenetur explicabo obcaecati quis quas mollitia nemo eaque?
+                        Nostrum dicta eveniet tempore perspiciatis illum mollitia sapiente perferendis aut hic quod,
+                        exercitationem dolorum vel quas? Fugit tempore eveniet voluptatum nobis nihil. Asperiores
+                        expedita id quam.</p>
                 </div>
-                <div class="setting-menu"></div>
+                <div class="setting-menu">
+                    <div class="menu-title">Settings</div>
+                    <div class="collapsible-menu">
+                        <!-- Menu item 1 -->
+                        <div class="collapse-title"><span class="fa fa-minus collapse-icon"></span> form mode options
+                        </div>
+                        <div class="collapse-menu">
+                            <label for="formmode-dropdown" class=" input-label ">Form mode</label>
+                            <select name="action-dropdown" id="formmode-dropdown">
+                                <option value="placeholder">Inline</option>
+                                <option value="1">Block</option>
+                                <option value="2">Inline-Block</option>
+                            </select>
+                        </div>
+                        <!-- Menu item 2 -->
+                        <div class="collapse-title"><span class="fa fa-minus collapse-icon"></span> publishing options
+                        </div>
+                        <div class="collapse-menu">
+                            <div class="publish-field"><span class="fa fa-check-square publish-icon"></span> Published
+                            </div>
+                            <div class="input-label">Last saved</div>
+                            <input type="text" class="data-value " placeholder="01.01.19" ></input>
+                            <div class="input-label">Author</div>
+                            <div class="input-value">admin</div>
+                            <div class="checkbox-field">
+                                <input type="checkbox" name="revision" id="revision">
+                                <label for="revision">New revision</label>
+                            </div>
+                        </div>
+                        <!-- Menu item 3 -->
+                        <div class="collapse-title"><span class="fa fa-minus collapse-icon"></span> Menu Settings</div>
+                        <div class="collapse-menu">
+                            <div>
+                                <input type="checkbox" name="menu-link" id="menu-link">
+                                <label for="menu-link">Provide a menu link</label>
+                            </div>
+                        </div>
+                        <!-- Menu item 4 -->
+                        <div class="collapse-title"><span class="fa fa-minus collapse-icon"></span>url path setting
+                        </div>
+                        <div class="collapse-menu">
+                            <div class="publish-field"><span class="fa fa-check-square publish-icon"></span> Generate
+                                automatic URL alias
+                                <span class="fa fa-info-circle info-icon "></span> </div>
+                            <input type="text" class="data-value " placeholder="page-title-value" disabled></input>
+                        </div>
+                        <!-- Menu item 5 -->
+                        <div class="collapse-title"><span class="fa fa-minus collapse-icon"></span>authoring information
+                        </div>
+                        <div class="collapse-menu">
+                            <div>
+                                <input type="checkbox" name="menu-link" id="menu-link">
+                                <label for="menu-link">Provide a menu link</label>
+                            </div>
+                        </div>
+                        <!-- Menu item 6 -->
+                        <div class="collapse-title"><span class="fa fa-minus collapse-icon"></span> promotion options
+                        </div>
+                        <div class="collapse-menu">
+                            <div>
+                                <input type="checkbox" name="menu-link" id="menu-link">
+                                <label for="menu-link">Provide a menu link</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </main>
             <!-- Ends:Content -->
         </div>

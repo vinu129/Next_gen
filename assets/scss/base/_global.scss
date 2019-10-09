@@ -25,9 +25,9 @@ body {
   @include wh;
   @include flex(row);
 }
-input[type="checkbox"] {
-  display: none;
-}
+// input[type="checkbox"] {
+//   display: none;
+// }
 ul {
   margin: 0;
   padding: 0;

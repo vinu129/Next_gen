@@ -1,0 +1,28 @@
+.collapsible-menu {
+    border-bottom: 1px solid $gray;
+   
+  .collapse-title {
+    text-transform: uppercase;
+    border-top: 1px solid $gray;
+    padding: 15px 0;
+    color: darken($accent,5%);
+    @include flex(row,center);
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .collapse-icon {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  .collapse-menu {
+    padding: 0 30px 10px 30px;
+     color: lighten($primary,10%);
+     font-size: 14px;
+    @include flex(column);
+    .input-label{
+      font-size: 0.8rem;
+      margin-bottom: 2px;
+        color: darken(#ccc, 15%);
+    }
+  }
+}

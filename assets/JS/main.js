@@ -24,18 +24,45 @@ $('.nav-toggle').click(function () {
         $('.nav-title').show();
         $('.add-menu').css("left", "250px");
         $('.nav-icon').css("width", "30px");
-        $('.nav-link').css({"justify-content":"flex-start"});
+        $('.nav-link').css({ "justify-content": "flex-start" });
         flag = 1;
     }
     else {
-        $('#site-nav').css("width", "55px");
+        $('#site-nav').css("width", "60px");
         $('.nav-title').hide();
-        $('.add-menu').css("left", "50px");
+        $('.add-menu').css("left", "60px");
 
         flag = 0;
     }
 })
 
+
+
 $('.close-menu').click(function () {
     $('.add-menu').hide(200);
 })
+
+
+// $('.collapse').click(function () {
+//     $('.collapse-body').slideToggle('slow');
+// });
+
+$('.collapse-title').click(function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    if (flag == 0) {
+        $this.next().slideUp(350);
+        console.log("up");
+        $this.children(".collapse-icon").removeClass("fa-minus");
+        $this.children(".collapse-icon").addClass("fa-plus");
+        flag = 1;
+    }
+    else {
+        console.log("down");
+        $this.next().slideDown(350);
+        $this.children(".collapse-icon").removeClass("fa-plus");
+        $this.children(".collapse-icon").addClass("fa-minus");
+        flag = 0;
+    }
+
+});

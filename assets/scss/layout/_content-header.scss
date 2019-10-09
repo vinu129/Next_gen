@@ -2,33 +2,60 @@
   @include wh(100%, 50px);
   @include flex(row, center);
   background-color: rgba(225, 225, 225, 0.3);
-//   box-shadow: -3px 1px 5px 0px #ccc;
   z-index: 2;
+  @include media-query(sm) {
+    height: auto;
+  }
   .header-content {
     @include wh;
     @include flex(row, center);
     padding-left: 40px;
-
+    @include media-query(sm) {
+      padding-left: 15px;
+    }
+    .edit-title {
+      @include flex(row, center);
+      @include media-query(sm) {
+      }
+    }
     .btn-group {
       margin-left: auto;
       height: 100%;
       padding: 8px 0;
       margin-right: 150px;
+      @include media-query(md) {
+        margin-right: 0;
+      }
+      @include media-query(sm) {
+        height: auto;
+        margin-right: 0;
+        margin-left: auto;
+      }
       .btn {
         height: 100%;
         padding: 1px 35px;
-        border:1px solid transparent;
+        border: 1px solid transparent;
+        @include media-query(sm) {
+          padding: 5px 10px;
+        }
       }
     }
     #action-dropdown {
       padding: 2px 5px;
       margin: 0 20px;
       outline: 0;
+      border: 1px solid $gray;
+      @include media-query(sm) {
+        display: none;
+      }
     }
   }
   .edit {
     font-size: 1.3rem;
     margin-right: 5px;
+    @include media-query(sm) {
+      font-size: 1rem;
+    }
   }
   #title_name {
     border: 0;
@@ -36,8 +63,18 @@
     height: 100%;
     background-color: transparent;
     font-size: 1.3rem;
+    @include media-query(sm) {
+      font-size: 1rem;
+      width: 150px;
+    }
+    @include media-query(xs) {
+      width: 100px;
+    }
     &::placeholder {
       font-size: 1.3rem;
+      @include media-query(sm) {
+        font-size: 1rem;
+      }
     }
   }
   .setting-icon {

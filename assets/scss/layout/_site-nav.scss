@@ -6,6 +6,11 @@
   flex-shrink: 0;
   padding: 0 5px;
   transition: 0.3s all ease-in-out;
+  // @include media-query(md) {
+  // position: absolute;
+  // left: 0;
+  // }
+  
   .nav-link {
     padding: 12px 0 12px 18px;
     color: $accent;
@@ -41,6 +46,7 @@
     background-color: $white;
     box-shadow: 3px 1px 6px 0px #ccc;
     padding: 10px 15px;
+    transition: 0.3s all ease-in-out;
     .close-menu {
       position: absolute;
       right: 0;
